@@ -47,7 +47,7 @@ const Home = () => {
           <div
             key={idx} 
             className={`slide ${inx === idx ? 'active' : '' }`}
-            style= {{ backgroundImage: `url(${process.env.Public_URL || '.'}/images/${img.src})`}}
+            style= {{ backgroundImage: `url(${process.env.Public_URL}/images/${img.src})`}}
             >
               <h1 className={`slide-title ${inx === idx ? 'title-show' : ''}`}>
                 {img.title}

@@ -81,11 +81,12 @@ const Gallery = () => {
               const y = -Math.sin(angle) * 150;
               return (<motion.img
                 key={i}
-                src={process.env.PUBLIC_URL + `images/img${i+1}.jpg`}
+                src={process.env.PUBLIC_URL + `/images/img${i+1}.jpg`}
                 initial={{ opacity: 0, x, y }}
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 transition={{ duration: 1, delay: i * 0.5 }}
                 viewport={{ once:true, amount:0.5 }}
+                alt='groupImg'
               />
               );
             })
